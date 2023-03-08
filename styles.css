@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    display: grid;
+    background-color: #007FFF;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.side-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    color: white;
+    height: 50%;
+}
+
+svg {
+    width: 20px;
+    fill: white;
+}
+
+ul {
+    list-style-type: none;
+}

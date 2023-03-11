@@ -10,6 +10,43 @@
     grid-template-columns: 1fr 5fr;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+}
+
+.header svg {
+    width: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: end;
+}
+
+.buttons li {
+    background-color: #007FFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.search-bar {
+    width: 600px;
+    background-color: lightgray;
+    height: 30px;
+    border-radius: 30px;
+}
+
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -37,7 +74,7 @@
     height: 50%;
 }
 
-svg {
+.side-menu li svg {
     width: 20px;
     fill: white;
 }

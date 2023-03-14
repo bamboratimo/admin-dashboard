@@ -5,6 +5,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -19,7 +23,6 @@
     display: grid;
     grid-template-columns: 5fr 3fr;
     padding: 20px 20px;
-    gap: 20px;
     align-items: center;
 }
 
@@ -127,8 +130,13 @@ ul {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.article {
+    display: grid;
+    align-content: start;
 }
 
 .article-side {
@@ -136,14 +144,27 @@ ul {
     grid-template-columns: 1fr;
     gap: 30px;
     grid-column: -1 / -2;
-    align-content: start;
 }
 
 .card {
-    min-height: 150px;
+    height: 220px;
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 10px;
+    padding: 30px 100px 20px 30px;
+    display: grid;
+}
+
+.card-icon-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-icon {
+    width: 20px;
 }
 
 .card .card-header {
@@ -181,4 +202,26 @@ ul {
 
 .trending-at, .trending-text {
     font-size: 0.8rem;
+}
+
+.trending-content, .announcement-texts {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+}
+
+.announcements {
+    align-self: start;
+}
+
+.trending {
+    align-self: end;
+}
+
+.project-header, .announcement-header, .trending-header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
 }
